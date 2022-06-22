@@ -225,6 +225,8 @@ public class Lsn_Invoices_Listners implements ActionListener {
             int NumOfInvoice = 0;
             for(Inv_header invc : frame.getArray_Invoices()){
                 if(invc.getNumber() > NumOfInvoice) NumOfInvoice = invc.getNumber();
+                
+                
             }
             NumOfInvoice++;
             Inv_header newInvoice = new Inv_header(NumOfInvoice, NameOfCustomer , D);
